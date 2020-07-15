@@ -44,7 +44,7 @@ private void SaveOrder(Order order)
 
 Add the following log messages:
 
-- If order passes validation, log "Order [[orderId]] validated."
+- If order passes validation and has been saved, log "Order [[orderId]] validated and saved."
 - If order should be expedited, log "Order [[orderId]] expedited."
 - After adding order to customer history, if customer qualifies for expedited orders, log "Customer [[First Name]] [[Last Name]] now qualifies for expedited delivery."
 
