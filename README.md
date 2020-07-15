@@ -20,9 +20,18 @@ Having completed the BuilderTestSample exercise and the FileLogger exercise, you
 - [OrderService](https://github.com/ardalis/BuilderTestSample/blob/master/src/BuilderTestSample/Services/OrderService.cs)
 - `FileLogger`
 
-Your new task is to combine the two by adding logging to the OrderService and testing that it works as expected. You will write these tests using AutoFixture. Add the following log messages:
+Your new task is to combine the two by adding logging to the OrderService and testing that it works as expected. You will write these tests using AutoFixture. Try to use [this test approach](https://github.com/ardalis/AutoFixtureKataStarter/blob/master/AutoFixtureKataStarter/Tests/AutoFixtureTests.cs#L44-L57) where possible.
+
+
+Add the following log messages:
 
 - If order passes validation, log "Order [[orderId]] validated."
 - If order should be expedited, log "Order [[orderId]] expedited."
 - After adding order to customer history, if customer qualifies for expedited orders, log "Customer [[First Name]] [[Last Name]] now qualifies for expedited delivery."
+
+Write tests using xUnit, Moq, and AutoFixture to verify these messages are logged when they should be.
+
+### Extra Credit
+
+- Rewrite your `OrderService` tests to use AutoFixture to build `Order`, `Customer`, and `Address` as needed for its tests.
 
