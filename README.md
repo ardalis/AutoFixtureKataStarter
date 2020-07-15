@@ -42,6 +42,10 @@ private void SaveOrder(Order order)
 }
 ```
 
+Add new behavior to `OrderService` and test it (using AutoFixture):
+
+- If a customer's total prior purchases (not including this order) exceeds 10,000, expedite this order
+
 Add the following log messages:
 
 - If order passes validation and has been saved, log "Order [[orderId]] validated and saved."
