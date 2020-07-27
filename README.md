@@ -22,6 +22,12 @@ Having completed the BuilderTestSample exercise and the FileLogger exercise, you
 
 Your new task is to combine the two by adding logging to the OrderService and testing that it works as expected. You will write these tests using AutoFixture. Try to use [this test approach](https://github.com/ardalis/AutoFixtureKataStarter/blob/master/AutoFixtureKataStarter/Tests/AutoFixtureTests.cs#L44-L57) where possible.
 
+### Use Your Code
+
+Start with this repo, which you can download as a zip file and unzip into a folder where you're going to work. Copy your `OrderService.cs` file that you completed in the Test Builders kata and replace the file in the Services folder. Likewise, take your `FileLogger.cs` class and replace the class in that file of the same name in the root of AutoFixtureKataStarter.
+
+### Update OrderService to Set Id
+
 Some log messages will use the `Order.Id` property, which has been 0 for all of the previous kata. We need to add a step to give it a value. You can do that with this code snippet (change in `OrderService` class) by adding the `SaveOrder` method and calling it from `PlaceOrder` as shown:
 
 ```csharp
@@ -41,6 +47,8 @@ private void SaveOrder(Order order)
     order.Id = new Random().Next(1000, 10000);
 }
 ```
+
+### Add New Behavior
 
 Add new behavior to `OrderService` and test it (using AutoFixture):
 
