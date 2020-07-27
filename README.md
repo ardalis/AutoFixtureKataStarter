@@ -7,7 +7,7 @@ This exercise builds on two previous exercises:
 - [Test Builders in C#](https://github.com/ardalis/BuilderTestSample)
 - [FileLogger Mocking Kata](https://github.com/ardalis/kata-catalog/blob/master/katas/File%20Logger.md)
 
-You should be familiar with, and ideally have completed, both of the above exercises before starting this one.
+You should be familiar with, and ideally have completed, both of the above exercises before starting this one. If you haven't, you can start from this kata's code and perform these katas in this project if desired. Alternately, you can borrow working versions of these services from [this tagged repo](https://github.com/ardalis/AutoFixtureKataAttempts/tree/START/2020-07).
 
 ## Introducing AutoFixture
 
